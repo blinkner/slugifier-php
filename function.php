@@ -32,6 +32,7 @@ function slugify($nome):string {
     $slug = str_replace("Ç", "C", $slug);
     $slug = str_replace("!", "", $slug);
     $slug = str_replace("?", "", $slug);
+    $slug = str_replace(".", "", $slug);
     $slug = str_replace("(a)-", "-a-", $slug);
     $slug = str_replace("&quot;", "", $slug);
     $slug = strtolower($slug);
