@@ -19,8 +19,7 @@
             </form>
         </section>
         <section>
-            <p><strong>Seu slug é:</strong></p>
-            <p><?= $slug ?? '' ?></p>
+            <p><strong>Seu slug é:</strong> <?= $slug ?? '' ?></p>
         </section>
     </main>
 </body>
