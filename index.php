@@ -14,7 +14,7 @@
         </header>
         <section>
             <form action="" method="POST">
-                <input type="text" name="palavra" id="palavra" placeholder="Palavra ou frase" value="<?= $palavra ?? '' ?>">
+                <input type="text" name="palavra" id="palavra" placeholder="Palavra ou frase" value="<?= $palavra ?? '' ?>" required>
                 <input type="submit" value="Converter">
             </form>
         </section>

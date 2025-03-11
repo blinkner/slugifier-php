@@ -75,6 +75,8 @@ function slugify($nome):string {
     return $slug;
 }
 
-if (isset($_POST['palavra'])) {
-    $slug = slugify(htmlspecialchars($_POST['palavra'], ENT_QUOTES, 'UTF-8'));
+$palavra = $_POST['palavra'] ?? '';
+
+if ($palavra) {
+    $slug = slugify(htmlspecialchars($palavra, ENT_QUOTES, 'UTF-8'));
 }
