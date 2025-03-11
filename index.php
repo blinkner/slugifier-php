@@ -1,9 +1,10 @@
-<?php require_once 'function.php'; ?>
+<?php require_once 'controller.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Slugifier PHP</title>
 </head>
 <body>
@@ -12,8 +13,8 @@
             <h1>Slugifier PHP</h1>
         </header>
         <section>
-            <form action="" method="post">
-                <input type="text" name="palavra" id="palavra" value="<?= $palavra ?? '' ?>">
+            <form action="" method="POST">
+                <input type="text" name="palavra" id="palavra" placeholder="Palavra ou frase" value="<?= $palavra ?? '' ?>">
                 <input type="submit" value="Converter">
             </form>
         </section>
